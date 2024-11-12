@@ -7,8 +7,6 @@ Utilizando Bootstrap y Vite.
 - [Introduction](#introduction)
 - [Installation](#installation)
 - [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
 
 ## Introduction
 Sitio web para consultar información sobre TFGs. Bootstrap framework para CSS
