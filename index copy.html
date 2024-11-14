@@ -19,68 +19,233 @@
             <h1>¿Perdid@ con la documentación del TFG?</h1>
             <h2>¡Nosotros te ayudamos!</h2> 
         </header>
+        <div class="w-100"></div>
+          <img src="public/16024474562204.jpg" alt="" class="img-fluid">
+        </div>
         <div id="preguntas-frecuentes">
-            <div class="container mt-5">
-                <div class="card">
-                  <div class="card-header">
-                    <h5 class="mb-0">
-                      <button class="btn btn-link text-primary" data-bs-toggle="collapse" data-bs-target="#tfgInfo1 " aria-expanded="false" aria-controls="tfgInfo">
-                        Elegir el TFG
-                      </button>
-                    </h5>
-                  </div>
-                  <div id="tfgInfo1" class="collapse">
-                    <div class="card-body">
-                        <p>El Trabajo Fin de Grado (TFG) supone la realización por parte de cada estudiante y de forma individual de un proyecto bajo la supervisión de uno o más directores o directoras, en el que se integren y desarrollen los contenidos formativos recibidos, capacidades, competencias y destrezas adquiridas durante el periodo de docencia del grado. Deberá estar orientado a la aplicación de las competencias generales asociadas a la titulación, a capacitar para la búsqueda, gestión, organización e interpretación de datos relevantes.
-                        <br>
-                        El objetivo principal es consolidar las competencias conseguidas en el grado y desarrollar habilidades para la aplicación práctica de esas competencias. Para ello se realizará un trabajo consistente en el análisis de un problema relacionado con la formación académica en sus estudios y especialidad, el diseño y, en su caso, la implementación, de una solución adecuada.
-                        <br>
-                        Durante la realización del Trabajo se desarrollarán y verificarán las siguientes habilidades:
-                        <br>
-                            Conseguir los objetivos propuestos en el trabajo resolviendo de forma autónoma las dificultades que surjan en su desarrollo.
-                            <br>
-                            Planificar y gestionar el trabajo a realizar.
-                            <br>
-                            Redactar una memoria que recoja de manera exhaustiva el trabajo realizado con una estructura adecuada a un documento de trabajo de ingeniería y en un estilo riguroso y formal.
-                            Guía para el uso no sexista de la lengua castellana y de imágenes en la UPV/EHU
-                            <br>
-                            Exponer y defender públicamente el trabajo realizado.
-                        <br>
-                        Si el grado tiene alguna mención el TFG debe realizarse obligatoriamente en el área de la mención o especialidad cursada. Dicha inscripción se hará a través de GAUR .</p>
-                    </div>
+          <h2>PREGUNTAS FRECUENTES</h2>
+            <div class="container p-0">
+              <div class="card">
+                <div class="card-header">
+                  <h5 class="mb-0 d-flex justify-content-between align-items-center">
+                    <button class="btn btn-link text-primary" data-bs-toggle="collapse" data-bs-target="#tfgInfo1" aria-expanded="false" aria-controls="tfgInfo">
+                      ¿Qué es el TFG (Trabajo de Fin de Grado)?
+                    </button>
+                    <span class="dropdown-arrow">&#9660;</span>
+                  </h5>
+                  <script>
+                    document.addEventListener('DOMContentLoaded', function() {
+                      var button = document.querySelector('[data-bs-target="#tfgInfo1"]');
+                      var arrow = document.querySelector('.dropdown-arrow');
+                      button.addEventListener('click', function() {
+                        var expanded = button.getAttribute('aria-expanded') === 'true';
+                        arrow.innerHTML = expanded ? '&#9650;' : '&#9660;';
+                      });
+                    });
+                  </script>
+                </div>
+                <div id="tfgInfo1" class="collapse">
+                  <div class="card-body">
+                      <p>El Trabajo Fin de Grado (TFG) supone la realización por parte de cada estudiante y de forma individual de un proyecto bajo la supervisión de uno o más directores o directoras, en el que se integren y desarrollen los contenidos formativos recibidos, capacidades, competencias y destrezas adquiridas durante el periodo de docencia del grado. Deberá estar orientado a la aplicación de las competencias generales asociadas a la titulación, a capacitar para la búsqueda, gestión, organización e interpretación de datos relevantes.
+                      <br>
+                      El objetivo principal es consolidar las competencias conseguidas en el grado y desarrollar habilidades para la aplicación práctica de esas competencias. Para ello se realizará un trabajo consistente en el análisis de un problema relacionado con la formación académica en sus estudios y especialidad, el diseño y, en su caso, la implementación, de una solución adecuada.
+                      <br>
+                      Durante la realización del Trabajo se desarrollarán y verificarán las siguientes habilidades:
+                      <br>
+                          Conseguir los objetivos propuestos en el trabajo resolviendo de forma autónoma las dificultades que surjan en su desarrollo.
+                          <br>
+                          Planificar y gestionar el trabajo a realizar.
+                          <br>
+                          Redactar una memoria que recoja de manera exhaustiva el trabajo realizado con una estructura adecuada a un documento de trabajo de ingeniería y en un estilo riguroso y formal.
+                          Guía para el uso no sexista de la lengua castellana y de imágenes en la UPV/EHU
+                          <br>
+                          Exponer y defender públicamente el trabajo realizado.
+                      <br>
+                      Si el grado tiene alguna mención el TFG debe realizarse obligatoriamente en el área de la mención o especialidad cursada. Dicha inscripción se hará a través de GAUR.</p>
                   </div>
                 </div>
+              </div>
             </div>
-            <div class="container mt-5">
-                <div class="card">
-                  <div class="card-header">
-                    <h5 class="mb-0">
-                      <button class="btn btn-link text-primary" data-bs-toggle="collapse" data-bs-target="#tfgInfo" aria-expanded="false" aria-controls="tfgInfo">
-                        Cuándo matricularme al TFG?
-                      </button>
-                    </h5>
-                  </div>
-                  <div id="tfgInfo" class="collapse">
-                    <div class="card-body">
-                        <p>La inscripción/registro del TFG se podrá hacer una vez superados 168 créditos del grado (60 básicos de rama, 66 obligatorios y 42 optativos) .
+            <div class="container p-0">
+              <div class="card">
+                <div class="card-header">
+                <h5 class="mb-0 d-flex justify-content-between align-items-center">
+                  <button class="btn btn-link text-primary" data-bs-toggle="collapse" data-bs-target="#tfgInfo2" aria-expanded="false" aria-controls="tfgInfo">
+                    ¿Cuándo matricularme al TFG?
+                  </button>
+                  <span class="dropdown-arrow">&#9660;</span>
+                </h5>
+                <script>
+                  document.addEventListener('DOMContentLoaded', function() {
+                  var buttons = document.querySelectorAll('[data-bs-toggle="collapse"]');
+                  buttons.forEach(function(button) {
+                    var arrow = button.nextElementSibling;
+                    button.addEventListener('click', function() {
+                    var expanded = button.getAttribute('aria-expanded') === 'true';
+                    arrow.innerHTML = expanded ? '&#9650;' : '&#9660;';
+                    });
+                  });
+                  });
+                </script>
+                </div>
+                <div id="tfgInfo2" class="collapse">
+                  <div class="card-body">
+                      <p>La inscripción/registro del TFG se podrá hacer una vez superados 168 créditos del grado (60 básicos de rama, 66 obligatorios y 42 optativos) .
 
-                            La matricula del trabajo se podrá realizar cuando a la estudiante o el estudiante  le falten por superar como mucho 18 créditos optativos para la obtención del título de Grado, salvo los correspondientes al propio TFG.
-                            
-                             Se recomienda al alumno/a que matricule el proyecto en el curso académico en el que lo vaya a defender.
-                            
-                                GAUR  >> matrículas>> matrículas varios</p>
-                    </div>
+                          La matricula del trabajo se podrá realizar cuando a la estudiante o el estudiante  le falten por superar como mucho 18 créditos optativos para la obtención del título de Grado, salvo los correspondientes al propio TFG.
+                          
+                           Se recomienda al alumno/a que matricule el proyecto en el curso académico en el que lo vaya a defender.
+                          
+                              GAUR  >> matrículas>> matrículas varios</p>
                   </div>
                 </div>
+              </div>
             </div>
-            <div id="pregunta-desplegable">
-                <p>¿Cómo realizar la inscripción al TFG?</p>
+            <div class="container p-0">
+              <div class="card">
+                <div class="card-header">
+                  <h5 class="mb-0 d-flex justify-content-between align-items-center">
+                    <button class="btn btn-link text-primary" data-bs-toggle="collapse" data-bs-target="#tfgInfo3" aria-expanded="false" aria-controls="tfgInfo">
+                      ¿Cómo realizar la inscripción del TFG?
+                    </button>
+                    <span class="dropdown-arrow">&#9660;</span>
+                  </h5>
+                  <script>
+                    document.addEventListener('DOMContentLoaded', function() {
+                      var button = document.querySelector('[data-bs-target="#tfgInfo3"]');
+                      var arrow = document.querySelector('.dropdown-arrow');
+                      button.addEventListener('click', function() {
+                        var expanded = button.getAttribute('aria-expanded') === 'true';
+                        arrow.innerHTML = expanded ? '&#9650;' : '&#9660;';
+                      });
+                    });
+                  </script>
+                </div>
+                <div id="tfgInfo3" class="collapse">
+                  <div class="card-body">
+                    <ul>
+                      <li>GAUR >> Trabajos Fin de Grado-Trabajos Fin de Máster</li>
+                      <li>Manual para la gestión de TFG (perfil estudiante)</li>
+                      <li>Manual para la gestión de TFG (perfil director/a)</li>
+                    </ul>
+                    <p>Cuando el/la estudiante acuerde realizar el trabajo con quien ofrece el TFG, enviará un correo a dif.gral@ehu.eus informando de ello. Hasta que no se envíe este mensaje no se le asignará el TFG al/a la estudiante y una vez asignado el TFG se compromete a realizar el TFG.</p>
+                    <p>Y en los trabajos externos es obligatorio firmar un convenio entre la facultad, la empresa y el/la estudiante. Este convenio será enviado al estudiante una vez se le ha asignado el TFG. Además de un tutor/a de empresa, el estudiante contará un director/a docente de la facultad.</p>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div id="pregunta-desplegable">
-                <p>Elegir el TFG</p>
+            <div class="container p-0">
+              <div class="card">
+                <div class="card-header">
+                  <h5 class="mb-0 d-flex justify-content-between align-items-center">
+                    <button class="btn btn-link text-primary" data-bs-toggle="collapse" data-bs-target="#tfgInfo4" aria-expanded="false" aria-controls="tfgInfo">
+                      Elegir el TFG
+                    </button>
+                    <span class="dropdown-arrow">&#9660;</span>
+                  </h5>
+                  <script>
+                    document.addEventListener('DOMContentLoaded', function() {
+                      var button = document.querySelector('[data-bs-target="#tfgInfo4"]');
+                      var arrow = document.querySelector('.dropdown-arrow');
+                      button.addEventListener('click', function() {
+                        var expanded = button.getAttribute('aria-expanded') === 'true';
+                        arrow.innerHTML = expanded ? '&#9650;' : '&#9660;';
+                      });
+                    });
+                  </script>
+                </div>
+                <div id="tfgInfo4" class="collapse">
+                  <div class="card-body">
+                    <p>
+                    El/La estudiante tiene dos vías para elegir el TFG:
+
+                        El/La estudiante ya sabe el tema sobre el que quiere realizar el TFG y para ello busca un director/a (se trata de los TFG acordados). Pueden ser propuestos por el/la estudiante o por una empresa también.
+
+                        El/La estudiante no tiene claro el tema del TFG y puede acudir a la oferta pública de la Facultad. La oferta se hace pública en GAUR y se actualiza mensualmente. Para elegir el TFG de la oferta pública, el/la estudiante debe ponerse en contacto con la persona que ofrece el TFG:
+
+                        Si la oferta es de la Facultad, con el/la director/a del TFG.
+
+                        Si lo ofrece una organización externa, con la persona de contacto de la organización/empresa.
+
+
+                    Posibilidad de realizar el TFG mediante una empresa
+
+                    La empresa puede ofrecer un TFG abierto para cualquier estudiante como para un/a estudiante en particular con el/la que ya tiene una relación previa. Para poder ofrecer un TFG  la empresa debe seguir los siguientes pasos:
+
+                        La empresa debe registrarse en GAUR.
+
+                    Una vez validado ese registro en secretaría de la Facultad, la empresa recibirá un nombre de 	usuario y contraseña para acceder al sistema.
+
+                    Si la empresa ya está registrada pero necesita actualizar la contraseña, puede pedir la actualización escribiendo a dif.gral@ehu.eus.
+
+                    a) Si la empresa tiene un/a estudiante candidata para realizar el TFG:
+
+                    En este caso decimos que es un TFG acordado. La empresa inserta el TFG en es sistema, en el apartado de TFGs. Describe las características del trabajo y especifica los datos del/ la estudiante. La Facultad debe validar el trabajo.
+
+                    b) Si la empresa no tiene ningún/a estudiante candidata para realizar el TFG:
+
+                    En este caso se inserta el TFG en el sistema indicando las características del trabajo. Una vez ha sido validado el trabajo por la Facultad se publicará para el alumnado. El alumnado puede elegir entre la oferta publicada. Para ello, hay dos periodos  a lo largo de un curso, uno en octubre y otro en enero.
+
+                    Aspectos a tener en cuenta:
+
+                    El TFG del Grado en Ingeniería Informática e Inteligencia Artificial es de 12 créditos ECTS. Eso significa que es un trabajo de        unas 300 horas para el/la estudiante.
+
+                    Se firmará un convenio entre la empresa, estudiante y la Facultad.
+
+                    Además de la dirección del TFG por parte de la empresa, habrá una persona directora del TFG de la Facultad (el/la estudiante se hace cargo de esta parte).
+
+                    La UPV/EHU tiene concertada una póliza de responsabilidad civil para cubrir los daños que el alumnado pueda ocasionar durante la realización del TFG en empresa.
+
+                    Para dudas administrativas y ayuda sobre el funcionamiento del sistema, ponerse en contacto con la secretaría de la facultad: dif.gral@ehu.eus, tel: 943 015027
+
+                    Para dudas académicas y asesoramiento sobre los TFGs, ponerse en contacto con la Vicedecana de relaciones sociedad-empresa: dif.gizarte-enpresa-harremanak.dekanordea@ehu.eus, tel: 943 018058</p>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div id="pregunta-desplegable">
-                <p>Defensa y evaluación del TFG</p>
+            <div class="container p-0">
+              <div class="card">
+                <div class="card-header">
+                  <h5 class="mb-0 d-flex justify-content-between align-items-center">
+                    <button class="btn btn-link text-primary" data-bs-toggle="collapse" data-bs-target="#tfgInfo5" aria-expanded="false" aria-controls="tfgInfo">
+                      Defensa y evaluación del TFG
+                    </button>
+                    <span class="dropdown-arrow">&#9660;</span>
+                  </h5>
+                  <script>
+                    document.addEventListener('DOMContentLoaded', function() {
+                      var button = document.querySelector('[data-bs-target="#tfgInfo5"]');
+                      var arrow = document.querySelector('.dropdown-arrow');
+                      button.addEventListener('click', function() {
+                        var expanded = button.getAttribute('aria-expanded') === 'true';
+                        arrow.innerHTML = expanded ? '&#9650;' : '&#9660;';
+                      });
+                    });
+                  </script>
+                </div>
+                <div id="tfgInfo5" class="collapse">
+                  <div class="card-body">
+                    <p>
+                      Una vez  la memoria ya esté en condiciones de ser defendida el/la estudiante tiene que solicitar la defensa en GAUR y acto seguido el director/a del TFG ratificará la defensa. Para ello cumplimentará este documento detallando algunos aspectos  para la constitución del tribunal.
+
+                      La entrega de la memoria se hará mediante el servicio ADDI de la biblioteca (excepto en casos excepcionales en los que no se utilice ADDI habrá que entregar tres ejemplares impresos en la secretaría de la facultad).
+                      
+                          Manual para completar el TFG en ADDI
+                      
+                          Autorización difusión del trabajo
+                      
+                      Junto con la entrega de la memoria el/la estudiante entregará un póster que recoja el trabajo realizado. El contenido y diseño del póster será libre pero deberá contener necesariamente el título del TFG, nombre y apellidos del autor/a y el logo de la UPV/EHU.  El póster deberá ser enviado a la dirección dif.gral@ehu.eus en formato pdf y denominarlo bajo el esquema ApellidoNombre.pdf.
+                      
+                      La defensa será pública ante un tribunal. El tribunal evaluará el TFG teniendo en cuenta las observaciones del director/a (y en su caso el del tutor/a de la empresa también).
+                      
+                          Criterios  para la evaluación general de los TFG
+                      
+                          Tribunales de trabajos fin de grado
+                      
+                          Acta TFG (docx) (odt)</p>
+                  </div>
+                </div>
+              </div>
             </div>
             <img src="lupa" alt="foto lupa">
         </div>
