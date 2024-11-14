@@ -104,22 +104,24 @@
             <div class="container p-0">
               <div class="card">
                 <div class="card-header">
-                  <h5 class="mb-0 d-flex justify-content-between align-items-center">
-                    <button class="btn btn-link text-primary" data-bs-toggle="collapse" data-bs-target="#tfgInfo3" aria-expanded="false" aria-controls="tfgInfo">
-                      ¿Cómo realizar la inscripción del TFG?
-                    </button>
-                    <span class="dropdown-arrow">&#9660;</span>
-                  </h5>
-                  <script>
-                    document.addEventListener('DOMContentLoaded', function() {
-                      var button = document.querySelector('[data-bs-target="#tfgInfo3"]');
-                      var arrow = document.querySelector('.dropdown-arrow');
-                      button.addEventListener('click', function() {
-                        var expanded = button.getAttribute('aria-expanded') === 'true';
-                        arrow.innerHTML = expanded ? '&#9650;' : '&#9660;';
-                      });
+                <h5 class="mb-0 d-flex justify-content-between align-items-center">
+                  <button class="btn btn-link text-primary" data-bs-toggle="collapse" data-bs-target="#tfgInfo3" aria-expanded="false" aria-controls="tfgInfo">
+                    ¿Cómo realizar la inscripción del TFG?
+                  </button>
+                  <span class="dropdown-arrow">&#9660;</span>
+                </h5>
+                <script>
+                  document.addEventListener('DOMContentLoaded', function() {
+                  var buttons = document.querySelectorAll('[data-bs-toggle="collapse"]');
+                  buttons.forEach(function(button) {
+                    var arrow = button.nextElementSibling;
+                    button.addEventListener('click', function() {
+                    var expanded = button.getAttribute('aria-expanded') === 'true';
+                    arrow.innerHTML = expanded ? '&#9650;' : '&#9660;';
                     });
-                  </script>
+                  });
+                  });
+                </script>
                 </div>
                 <div id="tfgInfo3" class="collapse">
                   <div class="card-body">
@@ -137,22 +139,24 @@
             <div class="container p-0">
               <div class="card">
                 <div class="card-header">
-                  <h5 class="mb-0 d-flex justify-content-between align-items-center">
-                    <button class="btn btn-link text-primary" data-bs-toggle="collapse" data-bs-target="#tfgInfo4" aria-expanded="false" aria-controls="tfgInfo">
-                      Elegir el TFG
-                    </button>
-                    <span class="dropdown-arrow">&#9660;</span>
-                  </h5>
-                  <script>
-                    document.addEventListener('DOMContentLoaded', function() {
-                      var button = document.querySelector('[data-bs-target="#tfgInfo4"]');
-                      var arrow = document.querySelector('.dropdown-arrow');
-                      button.addEventListener('click', function() {
-                        var expanded = button.getAttribute('aria-expanded') === 'true';
-                        arrow.innerHTML = expanded ? '&#9650;' : '&#9660;';
-                      });
+                <h5 class="mb-0 d-flex justify-content-between align-items-center">
+                  <button class="btn btn-link text-primary" data-bs-toggle="collapse" data-bs-target="#tfgInfo4" aria-expanded="false" aria-controls="tfgInfo">
+                    Elegir el TFG
+                  </button>
+                  <span class="dropdown-arrow">&#9660;</span>
+                </h5>
+                <script>
+                  document.addEventListener('DOMContentLoaded', function() {
+                  var buttons = document.querySelectorAll('[data-bs-toggle="collapse"]');
+                  buttons.forEach(function(button) {
+                    var arrow = button.nextElementSibling;
+                    button.addEventListener('click', function() {
+                    var expanded = button.getAttribute('aria-expanded') === 'true';
+                    arrow.innerHTML = expanded ? '&#9650;' : '&#9660;';
                     });
-                  </script>
+                  });
+                  });
+                </script>
                 </div>
                 <div id="tfgInfo4" class="collapse">
                   <div class="card-body">
@@ -214,15 +218,17 @@
                   </h5>
                   <script>
                     document.addEventListener('DOMContentLoaded', function() {
-                      var button = document.querySelector('[data-bs-target="#tfgInfo5"]');
-                      var arrow = document.querySelector('.dropdown-arrow');
+                    var buttons = document.querySelectorAll('[data-bs-toggle="collapse"]');
+                    buttons.forEach(function(button) {
+                      var arrow = button.nextElementSibling;
                       button.addEventListener('click', function() {
-                        var expanded = button.getAttribute('aria-expanded') === 'true';
-                        arrow.innerHTML = expanded ? '&#9650;' : '&#9660;';
+                      var expanded = button.getAttribute('aria-expanded') === 'true';
+                      arrow.innerHTML = expanded ? '&#9650;' : '&#9660;';
                       });
                     });
+                    });
                   </script>
-                </div>
+                  </div>
                 <div id="tfgInfo5" class="collapse">
                   <div class="card-body">
                     <p>
