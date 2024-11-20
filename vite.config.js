@@ -1,14 +1,13 @@
 import { defineConfig } from 'vite';
 
 export default defineConfig({
-    root: 'views', // Cambia el directorio raíz a 'src'
+    base: './',
     build: {
-        outDir: '../dist', // Cambia la salida al directorio raíz
         rollupOptions: {
             input: {
-                main: 'views/index.html',       // Página principal
-                profesorado: 'views/profesorado.html',     // Página secundaria
-            },
-        },
-    },
+                main: 'index.html',
+                otherView: 'profesorado.html'  // Add all your HTML files here
+            }
+        }
+    }
 });
