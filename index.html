@@ -1,71 +1,331 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>web tfg</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="menu.css">
 </head>
-
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container">  
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <a class="navbar-brand" href="#inicio">UPV/EHU TFG</a>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#norm">Normativa</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#manu">Manual de Gestión y Calendario</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#profes">Profesorado</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#servicios" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            TFGs previos
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#ingsoft">Ing. Software</a></li>
-                            <li><a class="dropdown-item" href="#ingcom">Ing. Computadores</a></li>
-                            <li><a class="dropdown-item" href="#compu">Computación</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#autoev">Autoevaluación</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#licencias">Licencias</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contacto">Sobre nosotros</a>
-                    </li>
-                </ul>
-                <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit"><img src="lupa.jpg" width="30"/></button>
-                  </form>
-                </div>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">  
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="#inicio">UPV/EHU TFG</a>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#norm">Normativa</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#manu">Manual de Gestión y Calendario</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="profesorado.html">Profesorado</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#servicios" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        TFGs previos
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="#ingsoft">Ing. Software</a></li>
+                        <li><a class="dropdown-item" href="#ingcom">Ing. Computadores</a></li>
+                        <li><a class="dropdown-item" href="#compu">Computación</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#autoev">Autoevaluación</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#licencias">Licencias</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contacto">Sobre nosotros</a>
+                </li>
+            </ul>
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit"><img src="lupa.jpg" width="30"/></button>
+              </form>
             </div>
         </div>
-    </nav>
+    </div>
+  </nav>
     <main>
-        <header id="tit">
-            <h1>Manual de Gestión y Calendario</h1>
-        </header>
-        <div>
-            contenido
+      <header>
+        <div class="d-flex justify-content-center">
+          <img src="16024474562204.png" alt="" class="img-fluid w-75">
         </div>
+        <h2 class="m-3 text-center">PREGUNTAS FRECUENTES</h2>
+      </header>
+        <div class="" id="preguntas-frecuentes">
+            <div class="container p-0">
+              <div class="card">
+                <div class="card-header">
+                  <h5 class="mb-0 d-flex justify-content-between align-items-center">
+                    <button class="btn btn-link text-primary" data-bs-toggle="collapse" data-bs-target="#tfgInfo1" aria-expanded="false" aria-controls="tfgInfo">
+                      ¿Qué es el TFG (Trabajo de Fin de Grado)?
+                    </button>
+                    <span class="dropdown-arrow">&#9660;</span>
+                  </h5>
+                  <script>
+                    document.addEventListener('DOMContentLoaded', function() {
+                      var button = document.querySelector('[data-bs-target="#tfgInfo1"]');
+                      var arrow = document.querySelector('.dropdown-arrow');
+                      button.addEventListener('click', function() {
+                        var expanded = button.getAttribute('aria-expanded') === 'true';
+                        arrow.innerHTML = expanded ? '&#9650;' : '&#9660;';
+                      });
+                    });
+                  </script>
+                </div>
+                <div id="tfgInfo1" class="collapse">
+                  <div class="card-body">
+                    <p>El Trabajo Fin de Grado (TFG) supone la realización por parte de cada estudiante y de forma individual de un proyecto bajo la supervisión de uno o más directores o directoras, en el que se integren y desarrollen los contenidos formativos recibidos, capacidades, competencias y destrezas adquiridas durante el periodo de docencia del grado. Deberá estar orientado a la aplicación de las competencias generales asociadas a la titulación, a capacitar para la búsqueda, gestión, organización e interpretación de datos relevantes.</p>
+                
+                    <p>El objetivo principal es consolidar las competencias conseguidas en el grado y desarrollar habilidades para la aplicación práctica de esas competencias. Para ello se realizará un trabajo consistente en el análisis de un problema relacionado con la formación académica en sus estudios y especialidad, el diseño y, en su caso, la implementación, de una solución adecuada.</p>
+                
+                    <p>Durante la realización del Trabajo se desarrollarán y verificarán las siguientes habilidades:</p>
+                
+                    <ol>
+                        <li>Conseguir los objetivos propuestos en el trabajo resolviendo de forma autónoma las dificultades que surjan en su desarrollo.</li>
+                        <li>Planificar y gestionar el trabajo a realizar.</li>
+                        <li>Redactar una memoria que recoja de manera exhaustiva el trabajo realizado con una estructura adecuada a un documento de trabajo de ingeniería y en un estilo riguroso y formal.
+                            <br>
+                            <a href="https://www.ehu.eus/documents/d/informatika-fakultatea/guia_uso_no_sexista_ehu">Guía para el uso no sexista de la lengua castellana y de imágenes en la UPV/EHU</a>
+                        </li>
+                        <li>Exponer y defender públicamente el trabajo realizado.</li>
+                    </ol>
+                
+                    <p>Si el grado tiene alguna mención el TFG debe realizarse obligatoriamente en el área de la mención o especialidad cursada. Dicha inscripción se hará a través de GAUR.</p>
+                </div>
+                </div>
+              </div>
+            </div>
+            <div class="container p-0">
+              <div class="card">
+                <div class="card-header">
+                <h5 class="mb-0 d-flex justify-content-between align-items-center">
+                  <button class="btn btn-link text-primary" data-bs-toggle="collapse" data-bs-target="#tfgInfo2" aria-expanded="false" aria-controls="tfgInfo">
+                    ¿Cuándo matricularme al TFG?
+                  </button>
+                  <span class="dropdown-arrow">&#9660;</span>
+                </h5>
+                <script>
+                  document.addEventListener('DOMContentLoaded', function() {
+                  var buttons = document.querySelectorAll('[data-bs-toggle="collapse"]');
+                  buttons.forEach(function(button) {
+                    var arrow = button.nextElementSibling;
+                    button.addEventListener('click', function() {
+                    var expanded = button.getAttribute('aria-expanded') === 'true';
+                    arrow.innerHTML = expanded ? '&#9650;' : '&#9660;';
+                    });
+                  });
+                  });
+                </script>
+                </div>
+                <div id="tfgInfo2" class="collapse">
+                  <div class="card-body">
+                    <p>La inscripción/registro del TFG se podrá hacer una vez superados 168 créditos del grado (60 básicos de rama, 66 obligatorios y 42 optativos).</p>
+                    
+                    <p>La matrícula del trabajo se podrá realizar cuando a la estudiante o el estudiante le falten por superar como mucho 18 créditos optativos para la obtención del título de Grado, salvo los correspondientes al propio TFG.</p>
+                    
+                    <p>Se recomienda al alumno/a que matricule el proyecto en el curso académico en el que lo vaya a defender.</p>
+                    
+                    <ul>
+                        <li><a href="https://gestion.ehu.es/gaur">GAUR</a> &gt;&gt; matrículas &gt;&gt; matrículas varios</li>
+                    </ul>
+                </div>                
+                </div>
+              </div>
+            </div>
+            <div class="container p-0">
+              <div class="card">
+                <div class="card-header">
+                <h5 class="mb-0 d-flex justify-content-between align-items-center">
+                  <button class="btn btn-link text-primary" data-bs-toggle="collapse" data-bs-target="#tfgInfo3" aria-expanded="false" aria-controls="tfgInfo">
+                    ¿Cómo realizar la inscripción del TFG?
+                  </button>
+                  <span class="dropdown-arrow">&#9660;</span>
+                </h5>
+                <script>
+                  document.addEventListener('DOMContentLoaded', function() {
+                  var buttons = document.querySelectorAll('[data-bs-toggle="collapse"]');
+                  buttons.forEach(function(button) {
+                    var arrow = button.nextElementSibling;
+                    button.addEventListener('click', function() {
+                    var expanded = button.getAttribute('aria-expanded') === 'true';
+                    arrow.innerHTML = expanded ? '&#9650;' : '&#9660;';
+                    });
+                  });
+                  });
+                </script>
+                </div>
+                <div id="tfgInfo3" class="collapse">
+                  <div class="card-body">
+                    <ul>
+                        <li><a href="https://gestion.ehu.es/gaur">GAUR</a> &gt;&gt; Trabajos Fin de Grado - Trabajos Fin de Máster</li>
+                        <li>Manual para la gestión de TFG (<a href="https://www.ehu.eus/documents/340468/2334257/Manual+para+la+gesti%C3%B3n+del+PFG-estudiante/3eb48f8f-171b-4170-8bb6-d06ec13ed24d">perfil estudiante</a>)</li>
+                        <li>Manual para la gestión de TFG (<a href="https://www.ehu.eus/documents/340468/2334257/Manual+para+la+gesti%C3%B3n+del+PFG-director%28a%29/5f8143de-d4d6-4eb5-9750-8d251d47ba0f">perfil director/a</a>)</li>
+                    </ul>
+                    
+                    <p>Cuando el/la estudiante acuerde realizar el trabajo con quien ofrece el TFG, enviará un correo a <a href="mailto:dif.gral@ehu.eus">dif.gral@ehu.eus</a> informando de ello. Hasta que no se envíe este mensaje no se le asignará el TFG al/a la estudiante y una vez asignado el TFG se compromete a realizar el TFG.</p>
+                    
+                    <p>Y en los trabajos externos es obligatorio firmar un convenio entre la facultad, la empresa y el/la estudiante. Este convenio será enviado al estudiante una vez se le ha asignado el TFG. Además de un tutor/a de empresa, el estudiante contará un director/a docente de la facultad.</p>
+                </div>
+                
+                </div>
+              </div>
+            </div>
+            <div class="container p-0">
+              <div class="card">
+                <div class="card-header">
+                <h5 class="mb-0 d-flex justify-content-between align-items-center">
+                  <button class="btn btn-link text-primary" data-bs-toggle="collapse" data-bs-target="#tfgInfo4" aria-expanded="false" aria-controls="tfgInfo">
+                    Elegir el TFG
+                  </button>
+                  <span class="dropdown-arrow">&#9660;</span>
+                </h5>
+                <script>
+                  document.addEventListener('DOMContentLoaded', function() {
+                  var buttons = document.querySelectorAll('[data-bs-toggle="collapse"]');
+                  buttons.forEach(function(button) {
+                    var arrow = button.nextElementSibling;
+                    button.addEventListener('click', function() {
+                    var expanded = button.getAttribute('aria-expanded') === 'true';
+                    arrow.innerHTML = expanded ? '&#9650;' : '&#9660;';
+                    });
+                  });
+                  });
+                </script>
+                </div>
+                <div id="tfgInfo4" class="collapse">
+                  <div class="card-body">
+                    <p>El/La estudiante tiene dos vías para elegir el TFG:</p>
+                
+                    <ol>
+                        <li>El/La estudiante ya sabe el tema sobre el que quiere realizar el TFG y para ello busca un director/a (se trata de los TFG acordados). Pueden ser propuestos por el/la estudiante o por una empresa también.</li>
+                        <li>El/La estudiante no tiene claro el tema del TFG y puede acudir a la oferta pública de la Facultad. La oferta se hace pública en GAUR y se actualiza mensualmente. Para elegir el TFG de la oferta pública, el/la estudiante debe ponerse en contacto con la persona que ofrece el TFG:</li>
+                    </ol>
+                
+                    <ul>
+                        <li>Si la oferta es de la Facultad, con el/la director/a del TFG.</li>
+                        <li>Si lo ofrece una organización externa, con la persona de contacto de la organización/empresa.</li>
+                    </ul>
+                
+                    <h3>Posibilidad de realizar el TFG mediante una empresa</h3>
+                
+                    <p>La empresa puede ofrecer un TFG abierto para cualquier estudiante como para un/a estudiante en particular con el/la que ya tiene una relación previa. Para poder ofrecer un TFG la empresa debe seguir los siguientes pasos:</p>
+                
+                    <ul>
+                        <li>La empresa debe registrarse en <a href="https://www.google.com/url?q=https%3A%2F%2Fgestion.ehu.es%2FGaurGEN%2Ffaces%2Fgen300000%3Fp_lang%3DES%26_adf.ctrl-state%3D15pj6cf7ph_4&sa=D">GAUR</a>.</li>
+                    </ul>
+                
+                    <p>Una vez validado ese registro en secretaría de la Facultad, la empresa recibirá un nombre de usuario y contraseña para acceder al sistema.</p>
+                
+                    <p>Si la empresa ya está registrada pero necesita actualizar la contraseña, puede pedir la actualización escribiendo a dif.gral@ehu.eus.</p>
+                
+                    <p>a) Si la empresa tiene un/a estudiante candidata para realizar el TFG:</p>
+                
+                    <p>En este caso decimos que es un TFG acordado. La empresa inserta el TFG en es sistema, en el apartado de TFGs. Describe las características del trabajo y especifica los datos del/ la estudiante. La Facultad debe validar el trabajo.</p>
+                
+                    <p>b) Si la empresa no tiene ningún/a estudiante candidata para realizar el TFG:</p>
+                
+                    <p>En este caso se inserta el TFG en el sistema indicando las características del trabajo. Una vez ha sido validado el trabajo por la Facultad se publicará para el alumnado. El alumnado puede elegir entre la oferta publicada. Para ello, hay dos periodos a lo largo de un curso, uno en octubre y otro en enero.</p>
+                
+                    <h3>Aspectos a tener en cuenta:</h3>
+                
+                    <ul>
+                        <li>El TFG del Grado en Ingeniería Informática e Inteligencia Artificial es de 12 créditos ECTS. Eso significa que es un trabajo de unas 300 horas para el/la estudiante.</li>
+                        <li>Se firmará un convenio entre la empresa, estudiante y la Facultad.</li>
+                        <li>Además de la dirección del TFG por parte de la empresa, habrá una persona directora del TFG de la Facultad (el/la estudiante se hace cargo de esta parte).</li>
+                        <li>La UPV/EHU tiene concertada una póliza de responsabilidad civil para cubrir los daños que el alumnado pueda ocasionar durante la realización del TFG en empresa.</li>
+                    </ul>
+                
+                    <p>Para dudas administrativas y ayuda sobre el funcionamiento del sistema, ponerse en contacto con la secretaría de la facultad: dif.gral@ehu.eus, tel: 943 015027</p>
+                
+                    <p>Para dudas académicas y asesoramiento sobre los TFGs, ponerse en contacto con la Vicedecana de relaciones sociedad-empresa: dif.gizarte-enpresa-harremanak.dekanordea@ehu.eus, tel: 943 018058</p>
+                </div>
+                </div>
+              </div>
+            </div>
+            <div class="container p-0">
+              <div class="card">
+                <div class="card-header">
+                  <h5 class="mb-0 d-flex justify-content-between align-items-center">
+                    <button class="btn btn-link text-primary" data-bs-toggle="collapse" data-bs-target="#tfgInfo5" aria-expanded="false" aria-controls="tfgInfo">
+                      Defensa y evaluación del TFG
+                    </button>
+                    <span class="dropdown-arrow">&#9660;</span>
+                  </h5>
+                  <script>
+                    document.addEventListener('DOMContentLoaded', function() {
+                    var buttons = document.querySelectorAll('[data-bs-toggle="collapse"]');
+                    buttons.forEach(function(button) {
+                      var arrow = button.nextElementSibling;
+                      button.addEventListener('click', function() {
+                      var expanded = button.getAttribute('aria-expanded') === 'true';
+                      arrow.innerHTML = expanded ? '&#9650;' : '&#9660;';
+                      });
+                    });
+                    });
+                  </script>
+                  </div>
+                <div id="tfgInfo5" class="collapse">
+                  <div class="card-body">
+                    <p>
+                        Una vez la memoria ya esté en condiciones de ser defendida el/la estudiante tiene que <a href="https://www.google.com/url?q=https%3A%2F%2Fwww.ehu.eus%2Fdocuments%2Fd%2Finformatika-fakultatea%2Fgaur_tfg_y_ods_estudiantado-1&sa=D">solicitar la defensa en GAUR</a> y acto seguido el director/a del TFG ratificará la defensa. Para ello cumplimentará <a href="https://www.google.com/url?q=https%3A%2F%2Fwww.ehu.eus%2Fdocuments%2Fd%2Finformatika-fakultatea%2Fiig_gii_gral_zuzendaritzaren_txostena_tfg_informe_direccion_2024&sa=D">este documento</a> detallando algunos aspectos para la constitución del tribunal.</p>
+                    <p>La entrega de la memoria se hará mediante el servicio ADDI de la biblioteca (excepto en casos excepcionales en los que no se utilice ADDI habrá que entregar tres ejemplares impresos en la secretaría de la facultad).</p>
+                    <ul>
+                        <li><a href="https://www.google.com/url?q=https%3A%2F%2Fwww.ehu.eus%2Fdocuments%2F340468%2F2334264%2FADDI_guia.pdf&sa=D">Manual para completar el TFG en ADDI</a></li>
+                        <li><a href="https://www.google.com/url?q=https%3A%2F%2Fwww.ehu.eus%2Fdocuments%2Fd%2Finformatika-fakultatea%2Fautorizacion_tfg_tfm_es&sa=D">Autorización difusión del trabajo</a></li>
+                    </ul>
+                    <p>Junto con la entrega de la memoria el/la estudiante entregará un póster que recoja el trabajo realizado. El contenido y diseño del póster será libre pero deberá contener necesariamente el título del TFG, nombre y apellidos del autor/a y el logo de la UPV/EHU. El póster deberá ser enviado a la dirección dif.gral@ehu.eus en formato pdf y denominarlo bajo el esquema ApellidoNombre.pdf.</p>
+                    <p>La defensa será pública ante un tribunal. El tribunal evaluará el TFG teniendo en cuenta las observaciones del director/a (y en su caso el del tutor/a de la empresa también).</p>
+                    <ul>
+                        <li><a href="https://www.google.com/url?q=https%3A%2F%2Fwww.ehu.eus%2Fdocuments%2F340468%2F2334257%2FEvaluaci%25C3%25B3n%2Bproyectos_cas&sa=D">Criterios para la evaluación general de los TFG</a></li>
+                        <li><a href="https://www.google.com/url?q=https%3A%2F%2Fwww.ehu.eus%2Fdocuments%2Fd%2Finformatika-fakultatea%2F23_24_iig_gii_tribunales_epaimahaiak_2&sa=D">Tribunales de trabajos fin de grado</a></li>
+                    </ul>
+                    <p>Acta TFG (<a href="https://www.google.com/url?q=https%3A%2F%2Fwww.ehu.eus%2Fdocuments%2F340468%2F2575033%2FTFG_akta.docx%2F3868b150-ba7a-4166-81d7-077129464fdf%3Ft%3D1675774511387&sa=D">docx</a>) (<a href="https://www.google.com/url?q=https%3A%2F%2Fwww.ehu.eus%2Fdocuments%2F340468%2F2575033%2F2023GrAL_Akta.odt%2F54ee3012-f451-6546-3226-e5069bb8ae18%3Ft%3D1675774533121&sa=D">odt</a>)</p>
+                </div>
+                </div>
+              </div>
+            </div>
+        </div>
+        <div class="container text-center">
+          <div class="row">
+              <a href="#" class="col-6 p-2">
+                  <img src="Normativa.png" alt="Normativa" class="img-thumbnail w-100" style="height: 150px; object-fit: cover;">
+                  <p>Normativa</p>
+              </a>
+              <a href="#" class="col-6 p-2">
+                  <img src="Calendario.png" alt="Calendario" class="img-thumbnail w-100" style="height: 150px; object-fit: cover;">
+                  <p>Calendario</p>
+              </a>
+              <a href="#" class="col-6 p-2">
+                  <img src="TFGPrevios.png" alt="TFG previos" class="img-thumbnail w-100" style="height: 150px; object-fit: cover;">
+                  <p>TFG previos</p>
+              </a>
+              <a href="#" class="col-6 p-2">
+                  <img src="Quiz.png" alt="Autoevaluacion" class="img-thumbnail w-100" style="height: 150px; object-fit: cover;">
+                  <p>Autoevaluacion</p>
+              </a>
+              <a href="profesorado.html" class="col-6 p-2">
+                  <img src="Tutores.png" alt="Profesorado" class="img-thumbnail w-100" style="height: 150px; object-fit: cover;">
+                  <p>Profesorado</p>
+              </a>
+              <a href="#" class="col-6 p-2">
+                  <img src="licencias.jpg" alt="Sobre nosotros" class="img-thumbnail w-100" style="height: 150px; object-fit: cover;">
+                  <p>Licencias</p>
+              </a>
+          </div>
+      </div>
     </main>
+    <footer class="d-flex justify-content-center m-2">
+      <a href=""><button class="btn btn-primary">Sobre nosotros</button></a>
+    </footer>
 </body>
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-
 </html>
