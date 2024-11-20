@@ -6,7 +6,8 @@ export default defineConfig({
         rollupOptions: {
             input: {
                 main: 'index.html',
-                otherView: 'profesorado.html'  // Add all your HTML files here
+                profesorado: 'profesorado.html',
+                licencias: 'licencias.html'
             }
         }
     }
