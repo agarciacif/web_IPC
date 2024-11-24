@@ -7,7 +7,8 @@ export default defineConfig({
             input: {
                 main: 'index.html',
                 profesorado: 'profesorado.html',
-                licencias: 'licencias.html'
+                licencias: 'licencias.html',
+                normativa: 'normativa.html'
             }
         }
     }
