@@ -8,7 +8,10 @@ export default defineConfig({
                 main: 'index.html',
                 profesorado: 'profesorado.html',
                 licencias: 'licencias.html',
-                normativa: 'normativa.html'
+                normativa: 'normativa.html',
+                manual: 'manualDeGestionYCalendario.html',
+                nosotros: 'sobreNosotros.html',
+                tfgPrevios: 'tfgPrevios.html'
             }
         }
     }
