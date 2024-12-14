@@ -10,7 +10,14 @@ body{
   background-color: #B4CDDE;
   font-weight: bold;
 }
-
+.image-container img {
+  width: 300px; /* Fuerza el mismo ancho */
+  height: 400px; /* Fuerza el mismo alto */
+  object-fit: contain; /* Mantiene la relación de aspecto */
+}
+.btn-eval {
+  margin-top: 10px; /* Espaciado uniforme */
+}
 #botonNav{
   background-color: #152740; 
 }
