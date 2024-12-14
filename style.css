@@ -45,3 +45,10 @@
   height: 100%;
   width: 100%;
 }
+
+#cuadNorm, #cuadCal, #cuadTFG, #cuadAuto, #cuadProfes, #cuadLic{
+  text-decoration: none;
+  color: #152740;
+  text-transform: uppercase;
+  /* font-weight: bold; */
+}
