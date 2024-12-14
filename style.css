@@ -1,4 +1,4 @@
-#cuerpo{
+#cuerpo {
   background-color: #FEFEFC;
 }
 #menuNav{
@@ -32,9 +32,19 @@
   text-decoration: none; /* Elimina el subrayado */
   color: #152740;
 }
+#tit{
+  background-color: #D4E3EC;
+}
+#botAu1, #botAu2{
+  background-color: #152740; 
+  color: #FEFEFC;
+  text-align: center;
+
+}
 #botonSN{
   background-color: #152740;
   color: #FEFEFC;
+  text-align: center;
 }
 
 #cuadCal, #cuadNorm, #cuadTFG, #cuadAuto, #cuadProfes, #cuadLic{
