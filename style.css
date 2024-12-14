@@ -1,8 +1,14 @@
+body{
+  font-family: 'Roboto', sans-serif;
+  background-color: #FEFEFC;
+  color: hsl(215, 51%, 17%);
+}
 #cuerpo {
   background-color: #FEFEFC;
 }
 #menuNav{
   background-color: #B4CDDE;
+  font-weight: bold;
 }
 
 #botonNav{
@@ -27,10 +33,12 @@
 }
 .card .card-header{
   background-color: #B4CDDE;
+  font-weight: bold;
 }
 .card-header .btn-link {
   text-decoration: none; /* Elimina el subrayado */
   color: #152740;
+  font-weight: bold;
 }
 #tit{
   background-color: #D4E3EC;
@@ -61,4 +69,10 @@
   color: #152740;
   text-transform: uppercase;
   /* font-weight: bold; */
+}
+.titulo{
+  color: #152740;
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
 }
