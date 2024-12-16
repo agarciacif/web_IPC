@@ -3,24 +3,29 @@ body{
   background-color: #FEFEFC;
   color: hsl(215, 51%, 17%);
 }
+
 #cuerpo {
   background-color: #FEFEFC;
 }
+
 #menuNav{
   background-color: #B4CDDE;
   font-weight: 500;
 }
+
 .image-container a img {
   width: 300px; /* Forzar el ancho */
   height: 400px; /* Forzar el alto */
   object-fit: contain; /* Mantener la relación de aspecto */
-  border: 1px solid #000; /* Borde más grueso para hacerlo visible */
+  border: 1px solid #152740; /* Borde más grueso para hacerlo visible */
   border-radius: 5px; /* Bordes redondeados */
   box-sizing: border-box; /* Asegura que el borde no se solape con el contenido */
 }
+
 .btn-eval {
   margin-top: 10px; /* Espaciado uniforme */
 }
+
 #botonNav{
   background-color: #152740; 
 }
@@ -41,37 +46,44 @@ body{
   display: block;
   transition: all 0.3s ease;
 }
+
 .card .card-header{
   background-color: #B4CDDE;
   font-weight: bold;
 }
+
 .card-header .btn-link {
   text-decoration: none; /* Elimina el subrayado */
   color: #152740;
   font-weight: bold;
 }
+
 #tit{
   background-color: #D4E3EC;
 }
+
 #botAu1, #botAu2{
   background-color: #152740; 
   color: #FEFEFC;
   text-align: center;
 
 }
+
 #botonSN{
   background-color: #152740;
   color: #FEFEFC;
   text-align: center;
 }
 
-#cuadCal, #cuadNorm, #cuadTFG, #cuadAuto, #cuadProfes, #cuadLic{
+#botonFooter{
   background-color: #B4CDDE;
+  color: #152740;
+  text-align: center;
+  margin-top:100px;
 }
 
-#imagInicio{
-  height: 100%;
-  width: 100%;
+#cuadCal, #cuadNorm, #cuadTFG, #cuadAuto, #cuadProfes, #cuadLic{
+  background-color: #B4CDDE;
 }
 
 #cuadNorm, #cuadCal, #cuadTFG, #cuadAuto, #cuadProfes, #cuadLic{
@@ -80,16 +92,38 @@ body{
   text-transform: uppercase;
   /* font-weight: bold; */
 }
+
+#imagInicio{
+  height: 100%;
+  width: 100%;
+}
+
 .titulo{
   color: #152740;
   text-align: center;
   font-size: 25px;
   font-weight: 500;
+}
 
+#botonSubir {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 40px;
+  height: 40px;
+  font-size: 25px;
+  background-color: #152740;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items:normal; 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  text-decoration: none;
 }
-.footer{
-  padding: 50px;
-}
-.div #headingOne, #headingTwo, #headingThree, #headingFour{
-  text-align: left;
-}
+
+
+
